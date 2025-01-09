@@ -1,11 +1,16 @@
 package github.ezgikardes.fundflow.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name = "users", schema = "fundflow")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
