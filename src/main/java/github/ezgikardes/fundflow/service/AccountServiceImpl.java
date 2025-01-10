@@ -35,4 +35,14 @@ public class AccountServiceImpl implements AccountService{
         }
         return null;
     }
+
+    @Override
+    public Account updateAccount(Long id, Account accountDetails) {
+        Account account = accountRepository.findById(id).orElse(null);
+        if(account != null){
+            account.setBalance((accountDetails.getBalance()));
+            return accountRepository.save(account);
+        }
+        return null;
+    }
 }

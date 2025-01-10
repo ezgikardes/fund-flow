@@ -8,4 +8,5 @@ public interface AccountService {
     public List<Account> getAccountsByUser(Long userId);
 
     public Account createAccount(Account account);
+    Account updateAccount(Long id, Account accountDetails);
 }
