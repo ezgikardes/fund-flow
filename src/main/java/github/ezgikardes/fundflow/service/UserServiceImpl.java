@@ -1,5 +1,6 @@
 package github.ezgikardes.fundflow.service;
 
+import github.ezgikardes.fundflow.exception.UserAlreadyExistsException;
 import github.ezgikardes.fundflow.model.User;
 import github.ezgikardes.fundflow.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User registerUser(User user) {
+        // Kullanıcı zaten varsa, exception fırlatıyoruz
+        if (userRepository.findByUsername(user.getUsername()).isPresent()) {
+            throw new UserAlreadyExistsException("User already exists with username: " + user.getUsername());
+        }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
     }

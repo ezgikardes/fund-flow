@@ -2,6 +2,7 @@ package github.ezgikardes.fundflow.controller;
 
 import github.ezgikardes.fundflow.model.User;
 import github.ezgikardes.fundflow.service.UserService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
@@ -26,7 +27,7 @@ public class UserController {
     public ResponseEntity<Object> getUser(@PathVariable Long id){
         User user = userService.getUserById(id);
         if (user == null) {
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException("User not found with id: " + id);
         }
         return ResponseEntity.ok(user);
     }
