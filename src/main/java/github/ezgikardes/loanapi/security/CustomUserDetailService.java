@@ -1,7 +1,7 @@
-package github.ezgikardes.fundflow.security;
+package github.ezgikardes.loanapi.security;
 
-import github.ezgikardes.fundflow.model.User;
-import github.ezgikardes.fundflow.repository.UserRepository;
+import github.ezgikardes.loanapi.model.User;
+import github.ezgikardes.loanapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

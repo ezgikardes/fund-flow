@@ -1,8 +1,8 @@
-package github.ezgikardes.fundflow.service;
+package github.ezgikardes.loanapi.service;
 
-import github.ezgikardes.fundflow.exception.UserAlreadyExistsException;
-import github.ezgikardes.fundflow.model.User;
-import github.ezgikardes.fundflow.repository.UserRepository;
+import github.ezgikardes.loanapi.exception.UserAlreadyExistsException;
+import github.ezgikardes.loanapi.model.User;
+import github.ezgikardes.loanapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

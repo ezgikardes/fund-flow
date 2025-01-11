@@ -1,4 +1,4 @@
-package github.ezgikardes.fundflow.exception;
+package github.ezgikardes.loanapi.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

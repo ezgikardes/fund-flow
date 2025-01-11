@@ -1,7 +1,7 @@
-package github.ezgikardes.fundflow.controller;
+package github.ezgikardes.loanapi.controller;
 
-import github.ezgikardes.fundflow.model.Account;
-import github.ezgikardes.fundflow.service.AccountService;
+import github.ezgikardes.loanapi.model.Account;
+import github.ezgikardes.loanapi.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

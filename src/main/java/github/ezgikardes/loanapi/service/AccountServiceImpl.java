@@ -1,9 +1,9 @@
-package github.ezgikardes.fundflow.service;
+package github.ezgikardes.loanapi.service;
 
-import github.ezgikardes.fundflow.model.Account;
-import github.ezgikardes.fundflow.model.User;
-import github.ezgikardes.fundflow.repository.AccountRepository;
-import github.ezgikardes.fundflow.repository.UserRepository;
+import github.ezgikardes.loanapi.model.Account;
+import github.ezgikardes.loanapi.model.User;
+import github.ezgikardes.loanapi.repository.AccountRepository;
+import github.ezgikardes.loanapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package github.ezgikardes.fundflow.repository;
+package github.ezgikardes.loanapi.repository;
 
-import github.ezgikardes.fundflow.model.Account;
+import github.ezgikardes.loanapi.model.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

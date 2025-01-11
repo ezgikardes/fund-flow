@@ -1,4 +1,4 @@
-package github.ezgikardes.fundflow.exception;
+package github.ezgikardes.loanapi.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;

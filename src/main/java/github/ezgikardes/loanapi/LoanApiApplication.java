@@ -1,13 +1,13 @@
-package github.ezgikardes.fundflow;
+package github.ezgikardes.loanapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FundFlowApplication {
+public class LoanApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FundFlowApplication.class, args);
+		SpringApplication.run(LoanApiApplication.class, args);
 	}
 
 }

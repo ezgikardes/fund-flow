@@ -1,4 +1,4 @@
-package github.ezgikardes.fundflow.model;
+package github.ezgikardes.loanapi.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

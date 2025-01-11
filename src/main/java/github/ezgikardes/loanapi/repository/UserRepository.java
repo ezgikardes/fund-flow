@@ -1,6 +1,6 @@
-package github.ezgikardes.fundflow.repository;
+package github.ezgikardes.loanapi.repository;
 
-import github.ezgikardes.fundflow.model.User;
+import github.ezgikardes.loanapi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

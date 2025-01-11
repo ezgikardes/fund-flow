@@ -1,6 +1,6 @@
-package github.ezgikardes.fundflow.service;
+package github.ezgikardes.loanapi.service;
 
-import github.ezgikardes.fundflow.model.Account;
+import github.ezgikardes.loanapi.model.Account;
 
 import java.util.List;
 

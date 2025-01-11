@@ -1,10 +1,10 @@
-package github.ezgikardes.fundflow;
+package github.ezgikardes.loanapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FundFlowApplicationTests {
+class LoanApiApplicationTests {
 
 	@Test
 	void contextLoads() {

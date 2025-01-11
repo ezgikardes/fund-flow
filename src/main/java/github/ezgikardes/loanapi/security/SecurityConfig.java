@@ -1,4 +1,4 @@
-package github.ezgikardes.fundflow.security;
+package github.ezgikardes.loanapi.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

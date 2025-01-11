@@ -1,7 +1,7 @@
-package github.ezgikardes.fundflow.controller;
+package github.ezgikardes.loanapi.controller;
 
-import github.ezgikardes.fundflow.model.User;
-import github.ezgikardes.fundflow.service.UserService;
+import github.ezgikardes.loanapi.model.User;
+import github.ezgikardes.loanapi.service.UserService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +18,12 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
+    public String get(){
+        return "Hello World";
+    }
+
+
+    @GetMapping("/all")
     @PreAuthorize("hasRole('ADMIN')")
     public List<User> getAllUsers(){
         return userService.getAllUsers();
